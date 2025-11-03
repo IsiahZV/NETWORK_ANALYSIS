@@ -16,17 +16,15 @@
 
 <img width="1400" height="792" alt="image" src="https://github.com/user-attachments/assets/2ea35778-9568-4764-97c5-6fac96fe980c" />
 
-
 # 2. Figuring out which nmap scan (TCP, SYN, UDP) type was used to scan port 80
    - "tcp.port == 80"
      ## BREAKDOWN
      - Filtering for the port equaling to 80 (HTTP) will show all traffic communication utilizing that specific port
 
-<img width="1400" height="271" alt="image" src="https://github.com/user-attachments/assets/3138e453-5834-468c-aa0e-e1cbcc2f3e46" />
 - As shown in the image, the nmap scan signature is using a TCP connect scan and shutting down the connection shortly after.
 - A regular TCP connect scan is as follows (SYN>, <SYN, ACK, ACK>)
 - A closed TCP port will provide (SYN> , <RST, ACK)
-
+<img width="1400" height="271" alt="image" src="https://github.com/user-attachments/assets/3138e453-5834-468c-aa0e-e1cbcc2f3e46" />
 
 # 3. Discovering the total ammount of UDP scans that resulted in a "Closed port" message
    - "icmp.type==3 and icmp.code==3"
