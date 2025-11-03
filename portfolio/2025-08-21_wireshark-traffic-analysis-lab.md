@@ -8,7 +8,7 @@
 
 
 ## Processes
-1. Filtered for the total of the "TCP Connect" scans
+## 1. Filtered for the total of the "TCP Connect" scans
    - "tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024"
      # BREAKDOWN
      - **"tcp.flags.syn==1"** Means to filter for TCP packets that have the "SYN" flag set
@@ -16,7 +16,7 @@
 
 <img width="1400" height="792" alt="image" src="https://github.com/user-attachments/assets/2ea35778-9568-4764-97c5-6fac96fe980c" />
 
-2. Figuring out which nmap scan (TCP, SYN, UDP) type was used to scan port 80
+## 2. Figuring out which nmap scan (TCP, SYN, UDP) type was used to scan port 80
    - "tcp.port == 80"
      # BREAKDOWN
      - Filtering for the port equaling to 80 (HTTP) will show all traffic communication utilizing that specific port
