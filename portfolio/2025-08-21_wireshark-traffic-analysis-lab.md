@@ -1,6 +1,7 @@
 # Wireshark Traffic Analysis – Nmap Scan Identification & Filters
 
 **Date:** 2025-08-21
+
 **Objective:** Analyze, identify, and describe nmap scans on given PCAPs
 
 **Environment:** TryHackMe – “Wireshark: Traffic Analysis” room  
