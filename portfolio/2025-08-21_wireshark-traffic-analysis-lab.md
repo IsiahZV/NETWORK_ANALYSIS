@@ -41,11 +41,7 @@
     
 
 ## Findings
-- Source IP: `203[.]0[.]113[.]55`
-- Repeated connection attempts over port 22.
 
 ## Outcome
-Successfully detected brute-force behavior; adjusted IDS thresholds to reduce noise.
 
 ## Lessons Learned
-Improved understanding of TCP flags and connection patterns in attack scenarios.
